@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Section</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #333;
+  }
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  margin-bottom: 15px;
+}
+
+/* Additional CSS for Services Section */
+.Services-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.Services-section .card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.Services-section .card-img-top {
+  padding: 20px; /* Add padding around your images if needed */
+  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.Services-section .card-body {
+  padding: 15px;
+}
+.Services-section .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.Services-section .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.Services-section .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Additional CSS for Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body {
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+
+    <!-- Home Section -->
+    <section id='home' class="home-section">
+        <div class="container text-center">
+          <h1><strong><span style="color: blue;">Abigael Cherotich</span></strong></h1>
+          <h3>Research and Data Analytics Professional</h3>
+          <p>Explore my work and Services</p>
+        </div>
+    </section>
+
+<section id='about' class="about-section">
+  <div class="container">
+    <h2>About</h2>
+    <img src="images/about/may.jpg" alt="About Me">
+    <p>I am Abigael, a pationate data analyst and researcher with wide-range of experience in Market and Social research. I have strong background in Economics and Statistics and passionate about working with organisations that want to make effective use of their data. I offer end-to-end project cycle support; from data sourcing, cleaning, analysis, visualization, all the way to providing insightful presentations. I will support each step of the process to enable your organisation in making evidence-driven decisions.</p>
+    <p>I can do quantitative and qualitative analysis as well as predictive analysis and data visualisation.</p>
+    <p>I am available for short-term projects and part-time longer-term engagements.</p>
+    <p>Tools capabilities: <strong>SPSS, R, Python, Stata, Excel</strong> and <strong>Tableau </strong>.</p>
+    <a href="https://drive.google.com/file/d/1Jk2A_RIJ0P5-TMi_YFvh1Xm3liKatdU6/view?usp=sharing" class="btn btn-secondary"target="_blank">My CV</a>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light" id="projects">
+    <div class="container">
+      <h2 class="text-center">Projects</h2>
+      <div class="row">
+           <!-- Project 1 -->
+           <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="images/projects/clustering.png" class="card-img-top custom-image" alt="Customer segmentation & clustering">
+              <div class="card-body">
+                <h5 class="card-title">Customer segmentation & clustering</h5>
+                <p class="card-text">Implemented K-means clustering methodology to partition the customer base of mall clients according to demographic variables including age, gender, income, and expenditure patterns. Employed segmentation strategies to tailor marketing initiatives and mall amenities for enhanced customer satisfaction and accelerated business expansion, aligning services with the distinctive preferences and behaviors of each identified segment.</p>
+                <a href="https://github.com/AbigaelCherotich/Abigael-Cherotich-Portfolio/blob/main/Segmentation%20%26%20clustering.ipynb" class="btn btn-secondary" target="_blank">View code</a>
+                <a href="https://drive.google.com/file/d/1n-sAtXamsv2T02rUsMUkKd2eRTNn19Hb/view?usp=sharing" class="btn btn-primary" target="_blank">View clustering report</a>
+              </div>
+            </div>
+          </div>
+           
+      <!-- Project 2 -->
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="images/projects/Data Analysis Background.png" class="card-img-top" alt="Data Analysis">
+            <div class="card-body">
+              <h5 class="card-title">Data Analysis</h5>
+              <p class="card-text">Often, companies have data that contain a lot of hidden information. Asking the right questions and analyzing the data will give you relevant insights. The goal is to answer the right questions that will help the company to make the right decisions. The case below is an example of sales analysis whereby I was trying to understand the customer journey from point of entry to point of shopping/drop out.</p>
+              <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FAbigaelCherotich%2FDashboard-goal%2Fmain%2FData%2520AnalysisV1.docx&wdOrigin=BROWSELINK" class="btn btn-primary" target="_blank">View Data Analysis Project</a>
+            </div>
+          </div>
+        </div>
+     </div> 
+      <div class="row">
+        <!-- Project 3 -->
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="images/projects/Analytics background.png" class="card-img-top" alt="Data Analytics">
+            <div class="card-body">
+              <h5 class="card-title">Data Analytics</h5>
+              <p class="card-text">Data analytics distinguishes itself from data analysis because it tells you what to do and what the result will be. It makes predictions and tells you what the result would be by taking a certain action. In other words: data analysis focuses on the past and current situation, data analytics focuses on the future. The case below is an example how to predict churn for recurring customers within an electricity company.</p>
+              <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FAbigaelCherotich%2FDashboard-goal%2Fmain%2FDATA%2520ANALYTICS-Documentv2.docx&wdOrigin=BROWSELINK" class="btn btn-primary" target="_blank">View Data Analytics project</a>
+            </div>
+          </div>
+        </div>
+          <!-- Project 4 -->
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="images/projects/Dash.png" class="card-img-top" alt="Data Visualization">
+            <div class="card-body">
+              <h5 class="card-title">Data Visualization</h5>
+              <p class="card-text">The dashboard below is an example focusing on economic outlook in Kenya 2019. The dashboard focussed specifically on the economic activities at County and subcounty level. Usually, the first page of a dashboard contains the most important KPI’s. You can navigate through the dashboard using the menu on the left.</p>
+              <a href="https://public.tableau.com/app/profile/abigael3872/viz/KENYAN2019ECONOMICOUTLOOKDASHBOARD/2019EconomicActivityinKenya?publish=yes" class="btn btn-primary" target="_blank">View dashboard</a>
+              <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FAbigaelCherotich%2FDashboard-goal%2Fmain%2FDashboard-documentv3.docx&wdOrigin=BROWSELINK" class="btn btn-secondary" target="_blank">Dashboard Goal & Duration</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  
+    </div>
+  </section>
+
+<!-- Services Section -->
+<section id="Services" class="Services-section bg-white" id="Services">
+  <div class="container">
+    <h2 class="text-center">Services</h2>
+    <div class="row">
+      <!-- Skill 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/Services/6.png" class="card-img-top" alt="Data collection and cleaning">
+          <div class="card-body">
+            <h5 class="card-title">Data collection and cleaning</h5>
+            <p class="card-text">Having worked in consulting firm all of my career,I am trained and highly experienced in questionnaire design,data collection and cleaning.</p>
+            <a href="mailto:abigaelcherotich867@gmail.com" class="btn btn-outline-primary">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/Services/5.png" class="card-img-top" alt="Quant and Qual Data Analysis">
+          <div class="card-body">
+            <h5 class="card-title">Quant and Qual Data Analysis</h5>
+            <p class="card-text">With my expertise in SPSS, Excel, R, Python, NVIVO and Dedoose, I offer service on qual and quant data analysis</p>
+            <a href="mailto:abigaelcherotich867@gmail.com" class="btn btn-outline-primary">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/Services/2.png" class="card-img-top" alt="Data Visualization         
+            ">
+          <div class="card-body">
+            <h5 class="card-title">Data Visualization</h5>
+            <p class="card-text"> I am highly experienced in creating static or interactive dashboard using Excel, Tableau, R and Python having worked in diverse projects.</p>
+            <a href="mailto:abigaelcherotich867@gmail.com" class="btn btn-outline-primary">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 4 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/Services/4.png" class="card-img-top" alt="Report Writing         ">
+          <div class="card-body">
+            <h5 class="card-title">Report Writing </h5>
+            <p class="card-text">I am highly poised in writing both Qual and quant reports which I  believe to be an essential aspect post. It's about weaving a narrative that brings the insights to life and makes them impactful.</p>
+            <a href="mailto:abigaelcherotich867@gmail.com" class="btn btn-outline-primary">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-center text-white bg-dark">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 mb-4">
+                <a href="https://linkedin.com/in/abigael-cherotich/" target="_blank">
+                    <img src="Icon/LinkedIn.png" alt="LinkedIn" class="social-icon">
+                    abigael-cherotich
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 mb-4">
+                <a href="mailto:abigaelcherotich867@gmail.com" target="_blank">
+                    <img src="Icon/email1.png" alt="Email" class="social-icon">
+                    abigaelcherotich867@gmail.com
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 mb-4">
+                <a href="tel:+254704990012">
+                    <img src="Icon/phone.png" alt="Phone" class="social-icon">
+                    +254704990012
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Abigael Cherotich Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home" onclick="closeNavbar()">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about" onclick="closeNavbar()">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects" onclick="closeNavbar()">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Services" onclick="closeNavbar()">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact" onclick="closeNavbar()">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  function closeNavbar() {
+    // Close the collapsed navbar after a navigation link is clicked
+    $('.navbar-collapse').collapse('hide');
+  }
+</script>
+
+
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
